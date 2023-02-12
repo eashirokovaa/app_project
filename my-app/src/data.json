@@ -1,0 +1,66 @@
+[
+  {
+    "id": "13206",
+    "english": "new",
+    "transcription": "[njuː]",
+    "russian": "новый",
+    "tags": "слова",
+    "tags_json": "[\"u0441u043bu043eu0432u0430\"]"
+  },
+  {
+    "id": "13228",
+    "english": "dog",
+    "transcription": "[dog]",
+    "russian": "собака",
+    "tags": "животные",
+    "tags_json": "[\"u0436u0438u0432u043eu0442u043du044bu0435\"]"
+  },
+  {
+    "id": "13229",
+    "english": "mouse",
+    "transcription": "[mʌuːs]",
+    "russian": "мышь",
+    "tags": "животные",
+    "tags_json": "[\"u0436u0438u0432u043eu0442u043du044bu0435\"]"
+  },
+  {
+    "id": "13230",
+    "english": "sun",
+    "transcription": "[ sʌn ] ",
+    "russian": "солнце",
+    "tags": "космос",
+    "tags_json": "[\"u043au043eu0441u043cu043eu0441\"]"
+  },
+  {
+    "id": "13231",
+    "english": "green",
+    "transcription": "[ griːn ]",
+    "russian": "зелёный",
+    "tags": "цвета",
+    "tags_json": "[\"u0446u0432u0435u0442u0430\"]"
+  },
+  {
+    "id": "13233",
+    "english": "apple",
+    "transcription": "[ ˈæpl ]",
+    "russian": "яблоко",
+    "tags": "фрукты",
+    "tags_json": "[\"u0444u0440u0443u043au0442u044b\"]"
+  },
+  {
+    "id": "13237",
+    "english": "home",
+    "transcription": " [həʊm]",
+    "russian": "дом",
+    "tags": "дом",
+    "tags_json": "[\"u0434u043eu043c\"]"
+  },
+  {
+    "id": "13251",
+    "english": "carrot",
+    "transcription": " [ˈkærət]",
+    "russian": "морковь",
+    "tags": "овощ",
+    "tags_json": "[\"u043eu0432u043eu0449\"]"
+  }
+]
