@@ -18,7 +18,7 @@ function Card(props) {
           Translate
         </Button>
       ) : (
-        <p>{russian}</p>
+        <p className="russian">{russian}</p>
       )}
     </div>
   );

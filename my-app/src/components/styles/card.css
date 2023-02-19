@@ -1,13 +1,15 @@
 .card {
     box-sizing: content-box;
     text-align: center;
-    vertical-align: center;
-    height: 20%;
+    height: 200px;
     width: 15%;
+    background-color: rgb(251, 251, 251);
+    border-radius: 15px 50px;
 
 }
   
 .hedding {
+    padding-top: 30px;
     margin-bottom: 1px;
 }
 .transcription {
@@ -15,4 +17,8 @@
 }
 .translate {
     margin: 0px 15px 10px 15px;
+}
+.russian {
+    color: green;
+    font-weight: bold;
 }
