@@ -29,7 +29,12 @@ function WordRow(props) {
           </td>
         </tr>
       ) : (
-        <EditableRow handleEdit={handleEdit}/>
+        <EditableRow
+          english={english}
+          transcription={transcription}
+          russian={russian}
+          handleEdit={handleEdit}
+        />
       )}
     </>
   );
