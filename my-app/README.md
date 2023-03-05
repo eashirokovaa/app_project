@@ -2,7 +2,7 @@ Project Name & Pitch
 
 Project name: Learning application
 
-An application used to learn English words and memorise them in gaming form built with React and Bootstrap.
+An application used to learn English words and memorise them in gaming form, built with React and Bootstrap.
 
 Project Status
 
