@@ -28,12 +28,22 @@
   color: #61dafb;
 }
 
-
-.app-container, .cardRow {
+.app-container,
+.cardRow {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 1rem;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
 }
 .cardRow {
   flex-direction: row;
@@ -43,11 +53,10 @@
 
 .button {
   height: 60px;
-
 }
 table {
   border-collapse: collapse;
-  width:80%;
+  width: 80%;
   margin: auto;
 }
 

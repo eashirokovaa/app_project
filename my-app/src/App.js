@@ -1,59 +1,47 @@
-import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import data from "./data.json";
-import WordRow from "./components/WordsList";
-import Card from "./components/WordCard";
-import Button from "react-bootstrap/Button";
-import {ArrowLeftCircleFill} from "react-bootstrap-icons";
-import {ArrowRightCircleFill} from "react-bootstrap-icons";
+import Main from "./Pages/MainPage/Main";
+import Game from "./Pages/GamePage/Game";
+import Error from "./Pages/ErrorPage/Error";
+import logo from "./images/logo.png";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  NavLink,
+} from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  function previousCard() {
-    if (count === 0) {
-      setCount(data.length - 1);
-    } else {
-      setCount(count - 1);
-    }
-  }
-  function nextCard() {
-    if (count === data.length - 1) {
-      setCount(0);
-    } else {
-      setCount(count + 1);
-    }
-  }
-  
   return (
-    <div className="app-container">
-      <div className="cardRow">
-      <Button className="button" variant="light" onClick={previousCard} size="lg">
-          <ArrowLeftCircleFill></ArrowLeftCircleFill>
-        </Button>
-        <Card word={data[count]} key={count}  />
-        <Button className="button" variant="light" onClick={nextCard} size="lg">
-          <ArrowRightCircleFill></ArrowRightCircleFill>
-        </Button>
+    <Router>
+      <div className="app-container">
+        <header>
+          <NavLink to="/">
+            {" "}
+            <img src={logo}></img>
+          </NavLink>
+          <NavLink
+            style={({ isActive }) => ({ color: isActive ? "green" : "black" })}
+            to="/"
+          >
+            Home
+          </NavLink>
+          <NavLink
+            style={({ isActive }) => ({ color: isActive ? "green" : "black" })}
+            to="/game"
+          >
+            Card game
+          </NavLink>
+        </header>
+        <main>
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/game" element={<Game />} />
+            <Route path="/*" element={<Error />} />
+          </Routes>
+        </main>
       </div>
-      <table>
-        <thead>
-          <th>English word</th>
-          <th>Transcription</th>
-          <th>Translation</th>
-          <th>Tags</th>
-          <th>Actions</th>
-        </thead>
-        <tbody>
-          {data.map((word, index) => (
-            <>
-              <WordRow key={index} word={word} />
-            </>
-          ))}
-        </tbody>
-      </table>
-    </div>
+    </Router>
   );
 }
 
